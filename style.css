@@ -1,0 +1,74 @@
+/* ============================================================
+   Cozy Gaming Setups — shared stylesheet
+   Edit your design HERE once; every page uses it.
+   Palette matches the logo (lavender / pink heart / cream / amber).
+   ============================================================ */
+:root {
+  --ink: #3a3550;
+  --muted: #8b85a8;
+  --accent: #7F77DD;
+  --pink: #D4537E;
+  --cream: #FFF0DC;
+  --amber: #FFD580;
+  --blue: #DCEEFC;
+  --bg: #F3EEF8;
+  --card: #ffffff;
+  --line: #ECE6FA;
+  --line-pink: #F4D9E2;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+}
+a { color: var(--accent); }
+
+.wrap { max-width: 880px; margin: 0 auto; padding: 42px 20px 80px; }
+.wrap.narrow { max-width: 760px; }
+
+/* ---- brand header / logo mark ---- */
+.brandbar { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 6px; }
+.brandbar.left { justify-content: flex-start; margin-bottom: 26px; }
+.logomark { flex: 0 0 auto; filter: drop-shadow(0 4px 14px rgba(127,119,221,0.22)); }
+.brandbar .name { font-size: 30px; font-weight: 600; color: var(--accent); }
+.topbar a { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--accent); font-weight: 500; font-size: 15px; }
+
+.hero { text-align: center; margin-bottom: 10px; }
+.hero .sub { font-size: 16px; color: var(--muted); margin: 14px auto 0; max-width: 480px; line-height: 1.55; }
+.rule { width: 46px; height: 6px; border-radius: 3px; background: var(--amber); margin: 20px auto 26px; }
+
+.disclosure { font-size: 12px; color: #9a8fb5; background: var(--cream); border: 1px solid #f3dcb8; border-radius: 10px; padding: 9px 14px; text-align: center; }
+.disclosure.home { max-width: 440px; margin: 0 auto 32px; }
+
+/* ---- homepage cards ---- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 18px; }
+.card { display: block; text-decoration: none; color: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; transition: transform .12s, box-shadow .12s; box-shadow: 0 6px 20px rgba(127,119,221,0.08); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 26px rgba(127,119,221,0.16); }
+.card .cat { display: inline-block; font-size: 11px; letter-spacing: .06em; color: var(--accent); background: #EEEDFE; border-radius: 20px; padding: 4px 12px; margin-bottom: 12px; }
+.card h2 { font-size: 20px; margin: 0 0 8px; color: var(--ink); }
+.card p { font-size: 14px; color: var(--muted); margin: 0 0 16px; line-height: 1.5; }
+.card .pill { display: inline-block; font-size: 13px; font-weight: 500; color: #fff; background: var(--accent); border-radius: 10px; padding: 8px 16px; box-shadow: 0 3px 12px rgba(127,119,221,0.32); }
+
+/* ---- setup page products ---- */
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; color: var(--ink); }
+.sub-lead { font-size: 17px; color: var(--muted); margin: 0 0 30px; }
+.product { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; margin-bottom: 16px; box-shadow: 0 4px 16px rgba(127,119,221,0.07); }
+.product .cat { display: inline-block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); background: #EEEDFE; border-radius: 20px; padding: 4px 12px; margin-bottom: 10px; }
+.product h3 { font-size: 20px; margin: 0 0 6px; color: var(--ink); }
+.product p { margin: 0 0 16px; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 500; font-size: 15px; padding: 10px 22px; border-radius: 10px; box-shadow: 0 3px 12px rgba(127,119,221,0.32); }
+
+/* ---- text pages (about / privacy) ---- */
+.prose h2 { font-size: 19px; margin: 30px 0 8px; color: var(--ink); }
+.prose p { line-height: 1.7; }
+.updated { color: var(--muted); font-size: 14px; }
+
+/* ---- footers ---- */
+nav.footer { margin-top: 48px; text-align: center; font-size: 13px; }
+nav.footer a { color: var(--muted); text-decoration: none; margin: 0 10px; }
+nav.footer a:hover { color: var(--accent); }
+footer.page { margin-top: 48px; font-size: 13px; color: var(--muted); text-align: center; }
+footer.page a { color: var(--muted); }
