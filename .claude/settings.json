@@ -1,0 +1,5 @@
+{
+    "env": {
+        "ANTHROPIC_FOUNDRY_BASE_URL": "https://aif-e61-ms-prod.cognitiveservices.azure.com/anthropic"
+    }
+}
