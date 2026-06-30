@@ -1,0 +1,4 @@
+# Claude Code local secrets / credentials — never commit these
+.claude/settings.local.json
+.claude/msal-cache.bin
+.claude/azure-config.json
