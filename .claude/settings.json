@@ -1,9 +1,9 @@
 {
-  "env": {
-    "ANTHROPIC_FOUNDRY_BASE_URL": "https://aif-e61-ms-prod.cognitiveservices.azure.com/anthropic"
-  },
-  "statusLine": {
-    "type": "command",
-    "command": "bash \"C:/Users/SofieLanduyt/Documents/Projects/dropshipping/cozygamingsetups/cozy-gaming-setups/.claude/statusline.sh\""
-  }
+    "env": {
+        "ANTHROPIC_FOUNDRY_BASE_URL": "https://aif-e61-ms-prod.cognitiveservices.azure.com/anthropic"
+    },
+    "statusLine": {
+        "type": "command",
+        "command": "bash \"C:/Users/SofieLanduyt/Documents/Projects/zelfstandig/cozygamingsetups/cozy-gaming-setups/.claude/statusline.sh\""
+    }
 }
