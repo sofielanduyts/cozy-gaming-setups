@@ -660,6 +660,12 @@ img { display: block; max-width: 100%; }
    RESPONSIVE
    ================================================================ */
 @media (max-width: 640px) {
+  /* Nav — hide logo text, keep icon; drop redundant home link */
+  .nav-inner { padding: 0 16px; }
+  .nav-logo { font-size: 0; gap: 0; }
+  .nav-links li.nav-home { display: none; }
+  .nav-links a { padding: 6px 10px; font-size: 12px; }
+
   .wrap { padding: 0 16px 80px; }
   .home-hero { padding: 52px 0 44px; }
   .product { padding: 22px 20px; }
